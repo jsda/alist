@@ -29,7 +29,7 @@ RUN apk update && \
         sed -i 's|/root|/opt/aria2|g' /opt/aria2/.aria2/aria2.conf && \
         sed -i 's|/root|/opt/aria2|g' /opt/aria2/.aria2/script.conf && \
         touch /opt/aria2/.aria2/aria2.session && \
-				cd /opt/aria2/.aria2 && \
+cd /opt/aria2/.aria2 && \
         /opt/aria2/.aria2/tracker.sh ; \
     rm -rf /var/cache/apk/*
 
